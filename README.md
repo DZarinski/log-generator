@@ -2,7 +2,7 @@
 
 Repository containing tools for generating semi-randomized computer telemetry (or log data)
 
-![Overview](documentation\readme-assets\overview.gif)
+![Overview](documentation/readme-assets/overview.gif)
 
 # Team Members
 
@@ -27,7 +27,7 @@ Repository containing tools for generating semi-randomized computer telemetry (o
 
 ## Home Page
 
-![Homepage](documentation\readme-assets\frontend_homePage.png)
+![Homepage](documentation/readme-assets/frontend_homePage.png)
 
 ## Configuring Loglines To Be Generated
 
@@ -43,7 +43,7 @@ Repository containing tools for generating semi-randomized computer telemetry (o
   - `File SHA256`
   - `Disposition`
 - Custom Logs
-  ![customLogs](documentation\readme-assets\customLogs.gif) <br/>
+  ![customLogs](documentation/readme-assets/customLogs.gif) <br/>
   The custom logs will be generated at the frequency specified. Custom logs will always contain the values that were specified for the fields. If a value for the field isn’t specified, it will be generated randomly or with the given field values.
   - `Edit` - press the edit button <br/>
     - In the pop-up window, add custom logs directly, or load from text or a json file
@@ -53,13 +53,13 @@ Repository containing tools for generating semi-randomized computer telemetry (o
 ## Selecting a Mode
 
 - Stream mode
-  ![Stream](documentation\readme-assets\stream.gif) <br/>
+  ![Stream](documentation/readme-assets/stream.gif) <br/>
   - Stream Address: Specify a `Stream Address` to stream to
   - Log Rate: Specify a `log rate` in logs/s. Select 0 or -1 for maximum rate available
   - Save logs: Select the checkbox if you'd like to save the streamed logs to file (S3 bucket)
   - Click `Start`
 - Batch mode
-  ![Batch](documentation\readme-assets\batch.gif) <br/>
+  ![Batch](documentation/readme-assets/batch.gif) <br/>
   - Number of Logs: Specify the number of logline to be included in the batch file
   - Click `Start`
 
@@ -97,11 +97,11 @@ Content-Type: application/json
 
 ## Active Jobs Page
 
-![ActiveJobsPage](documentation\readme-assets\frontend_activeJobsPage.png)
+![ActiveJobsPage](documentation/readme-assets/frontend_activeJobsPage.png)
 
 ## History Page
 
-![HistoryPage](documentation\readme-assets\frontend_historyPage.png)
+![HistoryPage](documentation/readme-assets/frontend_historyPage.png)
 
 # Deployment
 
@@ -248,7 +248,7 @@ To deploy the full stack application for the first time or for future updates fo
 1. Open the Docker Desktop Application on your computer
 2. Launch Jenkins
 3. Run the pipeline by navigating to `Dashboard`->`LogGenPipeline` and selected `Build Now`
-   ![Jenkins1](documentation\readme-assets\jenkins_buildNow.png)
+   ![Jenkins1](documentation/readme-assets/jenkins_buildNow.png)
 4. The full stack application is now launched and can be accessed by the EC2 instance URLs + port number + API address (applicable to backend)
    1. For example, frontendURL to landing page: http://ec2-52-38-219-170.us-west-2.compute.amazonaws.com/
    2. For example, backendURL to stats API: http://ec2-100-20-95-225.us-west-2.compute.amazonaws.com:8080/api/v1/generate/stats
